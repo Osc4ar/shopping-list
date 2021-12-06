@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 interface Item {
   id: string;
@@ -7,10 +7,10 @@ interface Item {
 
 function ChecklistElement(props: Item) {
   return (
-    <>
+    <div key={props.id}>
       <input type="checkbox" id={props.id} />
       <label htmlFor={props.id}>{props.name}</label>
-    </>
+    </div>
   );
 }
 
